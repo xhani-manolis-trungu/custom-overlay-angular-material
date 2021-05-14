@@ -8,7 +8,9 @@ import { FILE_PREVIEW_DIALOG_DATA } from './file-preview-overlay.tokens';
   selector: 'file-preview-overlay',
   template: `
     <div class="overlay-content">
-      <mat-icon class="icon" (click)="close()">cancel</mat-icon>
+      <mat-icon class="icon" style="cursor: pointer" (click)="close()"
+        >cancel</mat-icon
+      >
       <img [src]="image.url" />
     </div>
   `,
